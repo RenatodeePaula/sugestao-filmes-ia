@@ -8,20 +8,26 @@
     <link rel="stylesheet" href="./style.css">
 
 <!-- =================Phosphoricons============= -->
-
 <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+<!-- =================Fonts============= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<body>
-    <main>
-        <div id="container">
-            <header>
-                <img src="./assets/logo.svg" alt="Logo da movie IA">
-                <button id="recomendations">                    
-                    <span>Nova recomendação</span>
-                    <img src="./assets/flash.svg" alt="Ícone de um raio">                     
-                </button>            
-            </header> 
-            
+
+<body>    
+    <div id="container">
+        <header>
+            <img src="./assets/logo.svg" alt="Logo da movie IA">
+            <button id="recomendations">  
+                <h1>Nova recomendação</h1>
+                <div>
+                    <i class="ph ph-lightning"></i>                    
+                </div>                  
+            </button>            
+        </header> 
+        <main>
             <section id="first-movie">
                 <div class="title">
                     <h1>Barbie</h1>
@@ -101,17 +107,14 @@
                         <i class="ph ph-calendar-blank"></i>
                         <p>2023</p>
                     </div>
-
                 </div>
                 <button id="trailer">
                     <i class="ph ph-play"></i>
                     <h1>Assistir trailer</h1>
                 </button>
-            </section>
-            
-            
-        </div> 
-    </main>
-    
+            </section>  
+        </main>           
+                    
+    </div>     
 </body>
 </html>
