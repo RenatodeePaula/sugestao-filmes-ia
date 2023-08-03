@@ -6,16 +6,12 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    display: flex;      
     justify-content: center;
-    align-items: center;
-
     background: var(--gradientes-gradiente-hover, linear-gradient(90deg, #9F55FF 0%, #FF46B9 100%));   
-
-    font-family: 'Outfit', sans-serif;
-    color: #FFFFFF;
-    background-size: cover;
+    font-family: 'Outfit', sans-serif;   
+    padding: 70px 297px;    
+    overflow: hidden;
 }
 
 /* =================CARD CONTAINER============= */
@@ -27,6 +23,7 @@ body {
      align-items: center;
      justify-content: center;
      gap: 36px;
+     border: 6px solid #9747FF;
 
      border-radius: 16px;
      background: var(--cores-cinza-dark, #1E1F28);
@@ -58,8 +55,12 @@ header button {
     padding: 8px 16px;
 
     border: none;
-
     cursor: pointer;
+    transition: .9s ;
+}
+
+header button:hover {
+    background: var(--gradientes-gradiente-hover, linear-gradient(90deg, #9F55FF 0%, #FF46B9 100%));
 }
 
 header button h1 {
@@ -88,17 +89,15 @@ main {
     gap: 36px;
 }
 
-
-
 picture img {
     width: 194px;        
     height: 291px;
 }
+
 .title {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
+    align-items: center;  
 
     width: 194px ;
 }
@@ -110,22 +109,23 @@ picture img {
    
     font-size: 18px;   
     font-weight: 300;
-    line-height: 100%; /* 20px */
-  
+    line-height: 100%; /* 20px */  
 }
 
 .nots {
     display: flex;
     align-items: center;
     color: #FEEA35;
-}
- 
+} 
 
 .info {
     display: flex;
     justify-content: space-between;
     width: 194px;
+
+    margin: 8 0;
 }
+
 
 .date {
     display: flex;
@@ -137,3 +137,33 @@ picture img {
     line-height: 20px; /* 166.667% */
 }
 
+/* =================TRAILERS============= */
+.trailer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    
+    width: 194px;
+    padding: 8px 16px;   
+
+    border-radius: 4px;
+    background:  #2B2B37;    
+    color: #FFF;
+    border: none;
+
+    cursor: pointer;
+    transition: .9s ;
+}
+
+.trailer:hover {
+    background: var(--cores-cinza-mdio, #373745);
+}
+
+.trailer p {
+    color: var(--cores-branco, #FFF);
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
